@@ -792,13 +792,14 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
+                          <label for="name" style="display: none">Name</label>
                           <input
                             type="text"
                             class="form-control"
                             id="name"
                             placeholder="Name*"
                             name="name"
-							required
+                            required
                           />
                         </div>
                       </div>
@@ -807,13 +808,15 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
+                          <label for="email" style="display: none">Email</label>
+
                           <input
                             type="email"
                             class="form-control"
                             id="email"
                             placeholder="Email*"
                             name="email"
-							required
+                            required
                           />
                         </div>
                       </div>
@@ -822,13 +825,17 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
+                          <label for="subject" style="display: none"
+                            >Subject</label
+                          >
+
                           <input
                             type="text"
                             class="form-control"
                             id="subject"
                             placeholder="Subject*"
                             name="subject"
-							required
+                            required
                           />
                         </div>
                       </div>
@@ -837,13 +844,16 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
+                          <label for="comment" style="display: none"
+                            >Message</label
+                          >
                           <textarea
                             class="form-control"
                             rows="5"
                             id="comment"
                             name="comment"
                             placeholder="Message*"
-							required
+                            required
                           ></textarea>
                         </div>
                       </div>
@@ -866,6 +876,7 @@
                         <div
                           class="cf-turnstile ts-center"
                           data-sitekey="0x4AAAAAABU4inaMV4zxmifF"
+						  data-theme="light"
                         ></div>
                       </div>
                     </div>
@@ -873,11 +884,11 @@
                 </div>
                 <!--/.contact-form-->
 
-				<div class="row" id="loadingMessage" style="display: none" >
-					<div class="col-sm-12">
-						<div class="loader"></div>
-					</div>
-				</div>
+                <div class="row" id="loadingMessage" style="display: none">
+                  <div class="col-sm-12">
+                    <div class="loader"></div>
+                  </div>
+                </div>
                 <div id="errorMessage" style="display: none; color: red"></div>
                 <div id="successMessage" style="display: none; color: green">
                   Your message has been sent successfully!

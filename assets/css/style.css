@@ -272,7 +272,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #3643ff;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover { 
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    border: 1px solid #3643ff;
+    color: #3643ff !important;
+    background-color: rgb(229, 235, 242);
+}
+
+
+
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -402,9 +410,9 @@ span.single-timeline-horizontal {
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
-.skills {
+/* .skills {
     
-}
+} */
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
@@ -760,14 +768,15 @@ span.single-timeline-horizontal {
     -o-transition: 0.5s;
     transition: 0.5s;
     width: 100%;
-    border-radius: 0;
-  color: #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
   }
   
   .contact-form .contact-btn:hover {
-    background: #fff;
+    background: rgb(229, 235, 242);
     border: 1px solid #3643ff;
     color: #3643ff !important;
+    background-color: transparent;
   }
   
   .contact-form .contact-btn:focus {
@@ -804,6 +813,7 @@ span.single-timeline-horizontal {
     margin: 3px;
     background: repeating-conic-gradient(#0000 0 35deg,#514b82 0 90deg);
     -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+    mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
     border-radius: 50%;
   }
   @keyframes l18 { 
@@ -843,9 +853,9 @@ span.single-timeline-horizontal {
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-.hm-foot-icon {
+/* .hm-foot-icon {
    
-}
+} */
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #636a82;

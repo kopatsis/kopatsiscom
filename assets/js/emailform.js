@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
               } else {
                 document.getElementById("errorMessage").style.display = "block";
                 document.getElementById("errorMessage").textContent =
-                  "Server error, please try again later.";
+                  "Sorry, I'm unable to process your form submission request at the moment. Please email me directly, thanks :).";
               }
             });
           }

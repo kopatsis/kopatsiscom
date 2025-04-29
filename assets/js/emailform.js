@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
         .then((response) => {
           if (response.status === 204) {
-            document.getElementById("loadingMessage").style.display = "none";
             document.querySelector(".contact-form").style.display = "none";
             document.getElementById("successMessage").style.display = "block";
           } else {
@@ -72,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("errorMessage").style.display = "block";
           document.getElementById("errorMessage").textContent =
             "Sorry, I'm unable to process your form submission request at the moment. Please email me directly, thanks :).";
+        }).finally(() => {
+            document.getElementById("loadingMessage").style.display = "none";
         });
     });
 });
